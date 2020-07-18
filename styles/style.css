@@ -6,6 +6,7 @@
 html {
   background-color: white;
   font-size: 16px;
+  font-family: 'Public Sans', sans-serif;
   --main-padding: 0% 8%;
   --header-color: hsl(233, 26%, 24%);
 }
@@ -24,6 +25,7 @@ h4 {
 }
 p {
   color: hsl(233, 8%, 62%);
+  font-size: 0.9rem;
 }
 .invite-button {
   border-radius: 30px;
@@ -64,9 +66,9 @@ header {
   padding: var(--main-padding);
   background-image: url('../images/bg-intro-desktop.svg');
   background-origin: padding-box;
-  background-position: top center;
+  background-position: 500px 0px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 70%;
 }
 .intro-banner {
   grid-area: right;
@@ -94,7 +96,7 @@ header {
   padding: var(--main-padding);
 }
 .why-choose-text {
-  width: 60%;
+  width: 55%;
   margin-bottom: 50px;
 }
 .why-choose-gallery {
@@ -102,13 +104,16 @@ header {
   justify-content: space-between;
 }
 .why-choose-card {
-  width: 250px;
+  width: 260px;
 }
 .why-choose-card .green-icon {
   margin-bottom: 30px;
 }
 .why-choose-card h3 {
   margin-bottom: 20px;
+}
+.why-choose-card p {
+  line-height: 1.7;
 }
 .articles-section {
   height: 500px;
@@ -123,7 +128,8 @@ header {
   justify-content: space-between;
 }
 .article-card {
-  width: 250px;
+  width: 260px;
+  background-color: white;
 }
 .article-picture {
   overflow: hidden;
