@@ -14,19 +14,25 @@ html {
 h1 {
   font-size: 2.8rem;
   color: var(--header-color);
+  font-weight: normal;
 }
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: var(--header-color);
+  font-weight: normal;
+}
+h3 {
+  font-weight: normal;
 }
 h4 {
   margin: 10px 0px;
   color: var(--header-color);
+  font-weight: normal;
 }
 p {
   color: hsl(233, 8%, 62%);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .invite-button {
   border-radius: 30px;
