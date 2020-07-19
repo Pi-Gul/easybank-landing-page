@@ -1,9 +1,8 @@
-const test = document.getElementById('test');
 const buttonsArray = document.querySelectorAll('.invite-button');
 const navItemsArray = document.querySelectorAll('.nav-bar-list li');
 const socialListIconsArray = document.querySelectorAll('.social-list-icon');
-
-test.innerHTML = '!WORKS!';
+const hamburgerIcon = document.querySelector('.hamburger-img');
+const navBar = document.querySelector('.nav-bar-list');
 
 //highlighting the buttons
 function highlightButton(ev) {
@@ -41,5 +40,17 @@ function resetSocialIcon(ev) {
 for (let i = 0; i < socialListIconsArray.length; i++) {
   socialListIconsArray[i].addEventListener('mouseenter', highlightSocialIcon);
   socialListIconsArray[i].addEventListener('mouseleave', resetSocialIcon);
-  test.innerHTML = 'ICONS';
 }
+
+//drop-down hamburger menu
+function hamburgerMenuToggle(ev) {
+  let displayVal = window.getComputedStyle(navBar).getPropertyValue('display');
+  if (displayVal==='none') {
+    navBar.style.display = 'flex';
+    hamburgerIcon.setAttribute('src', './images/icon-close.svg');
+  } else if (displayVal==='flex') {
+    navBar.style.display = 'none';
+    hamburgerIcon.setAttribute('src', './images/icon-hamburger.svg');
+  };
+};
+hamburgerIcon.addEventListener('click', hamburgerMenuToggle);
