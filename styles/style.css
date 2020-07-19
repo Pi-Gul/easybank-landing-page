@@ -92,7 +92,7 @@ main {
   flex-direction: column;
 }
 .intro-section {
-  height: 500px;
+  height: 600px;
   display: grid;
   grid-template: 1fr / 35% 65%;
   grid-template-areas: 'left right';
@@ -122,7 +122,7 @@ main {
   margin: 20px 0px;
 }
 .why-choose-section {
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,8 +138,8 @@ main {
   justify-content: space-between;
 }
 .why-choose-card {
-  min-width: 260px;
-  max-width: 260px;
+  min-width: 280px;
+  max-width: 280px;
 }
 .why-choose-card .green-icon {
   margin-bottom: 30px;
@@ -151,7 +151,7 @@ main {
   line-height: 1.7;
 }
 .articles-section {
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,8 +163,9 @@ main {
   justify-content: space-between;
 }
 .article-card {
-  width: 260px;
+  width: 280px;
   background-color: white;
+  padding-bottom: 20px;
 }
 .article-picture {
   overflow: hidden;
