@@ -7,6 +7,7 @@ html {
   background-color: white;
   font-size: 16px;
   font-family: 'Public Sans', sans-serif;
+  overflow-x: hidden;
   --main-padding: 0% 8%;
   --header-color: hsl(233, 26%, 24%);
 }
@@ -87,7 +88,7 @@ main {
 .intro-section {
   height: 500px;
   display: grid;
-  grid-template: 1fr / 30% 70%;
+  grid-template: 1fr / 35% 65%;
   grid-template-areas: 'left right';
   background-color: hsl(0, 0%, 98%);
   padding: var(--main-padding);
@@ -131,7 +132,8 @@ main {
   justify-content: space-between;
 }
 .why-choose-card {
-  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
 }
 .why-choose-card .green-icon {
   margin-bottom: 30px;
@@ -227,7 +229,7 @@ footer {
   color: hsl(228, 45%, 44%); 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   html {
     width: 375px;
     margin: 0px auto;
@@ -277,6 +279,10 @@ footer {
     align-items: center;
     text-align: center;
     padding-bottom: 50px;
+    background-image: url('../images/bg-intro-mobile.svg');
+    background-origin: padding-box;
+    background-position: center top;
+    background-size: 120%;
   } 
   .intro-section .intro-banner .image-banner {
     width: 100%;
